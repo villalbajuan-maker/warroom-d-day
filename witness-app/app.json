@@ -1,0 +1,51 @@
+{
+  "expo": {
+    "name": "War Room",
+    "slug": "war-room-testigo",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "warroom",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#0A0B0D",
+    "splash": {
+      "image": "./assets/images/icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0A0B0D"
+    },
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.warroom.testigo"
+    },
+    "android": {
+      "package": "com.warroom.testigo",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/icon.png",
+        "backgroundColor": "#0A0B0D"
+      }
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single",
+      "favicon": "./assets/images/favicon.png",
+      "themeColor": "#0A0B0D",
+      "backgroundColor": "#0A0B0D",
+      "name": "War Room",
+      "shortName": "War Room",
+      "description": "Plataforma operativa de control electoral en tiempo real.",
+      "display": "standalone",
+      "orientation": "portrait",
+      "scope": "/",
+      "startUrl": "/"
+    },
+    "plugins": ["expo-router", "expo-font", "expo-web-browser", "expo-camera"],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "supabaseUrl": "https://mefbodbwqrbzdnvfvwfx.supabase.co",
+      "supabaseAnonKey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1lZmJvZGJ3cXJiemRudmZ2d2Z4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjgxNjkxNTEsImV4cCI6MjA4Mzc0NTE1MX0.NcJ4R_i-TrV24kkM1Tmf6gtKjEABH7YSAn7_P8XCeb4"
+    }
+  }
+}

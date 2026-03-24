@@ -1,0 +1,36 @@
+[build]
+  command = "npm run build:web"
+  publish = "dist"
+
+[[redirects]]
+  from = "/service-worker.js"
+  to = "/service-worker.js"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/manifest.json"
+  to = "/manifest.json"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/*"
+  to = "/server/:splat.html"
+  status = 200
+  force = false
+
+[[redirects]]
+  from = "/"
+  to = "/server/index.html"
+  status = 200
+
+[[headers]]
+  for = "/client/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
